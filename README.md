@@ -1,64 +1,67 @@
-# riskremover
-A batch antivirus migrated from riskremove.blogspot.com.
+# Risk Remover
 
---Key Features--: MD5 scanning engine, Web Firewall (which sucks).
+A batch antivirus with MD5 scanning engine and (**discontinued**) filename scan. Additional features include safebrowsing which filters out **only top 20** harmful websites all-time classifying from the **URL** themselves and the ability to adjust or view the date and time.
 
---MD5 scanning engine--
+## Getting Started
 
-This MD5 scanning engine uses https://virusshare.com/hashes.4n6 for md5 malware database. As of v.2.2.0, the antivirus database contains
-786432 *unique* samples for each malware itself. The scanning engine consists of John Walker's Formilab MD5 Command Line Message Digest Utility http://www.fourmilab.ch/md5/ and SachaDee http://stackoverflow.com/questions/40192417/how-to-make-a-md5-batch-virus-scanner md5 scanning codes.   
+1. Go to the [Main Website](https://riskremove.blogspot.com) and click on the "Download" tab
+2. Select the preferred version to download ( newest **recommended** )
+3. Decompress (Unzip/Unrar) the downloaded file with winzip or winrar or 7-zip depending on your choice (Winrar **preferred**)
+Note: Some versions come with an RAR-SFX executable so you must use winrar to automatically unzip/unrar them into the specified folder.
+4. Run the startriskremover.bat to start the program. Take note that some old/legacy versions may not contain this file so, instead of running this file on the legacy versions, you might have to run a file that have similar naming scheme to this one.
 
-*Crashing MD5 for different files **IS possible**but, the probabillity is very low and is discussed here: https://security.stackexchange.com/questions/52461/how-weak-is-md5-as-a-password-hashing-function.
+### Prerequisites
 
---Web firewall--
+This is the current requirements to run this program.
 
-This Web Firewall sucks. It only filters out 20 most dangerous pages on the internet and lets you choose you favourite browser to browse
-the *safe-or-so* pages which isn't included in the filter list of pages. This could become a *good* feature again with a help of everyone
-to find and commit in their dangerous webpages little by little.
+```
+Minimum requirements
+1. Windows XP and beyond ( Running below XP isn't tested before and therefore, risky and not advised to be done )
+2. The program's RAR/RAR-SFX package **intact** ( Refer to Getting Started Section )
+```
+```
+Recommended requirements
+1. Windows 7/8/8.1/10
+2. The program's RAR/RAR-SFX package **intact** ( Refer to Getting Started Section ) 
+```
 
---Status--
+## Built With
 
-Needs help in commiting a lot of features from everyone possible.
+* Windows Batch and Command Processor - The program framework 
+* Visual Basic Script - Embedded internal script framework
+* C, C++ and Makefile - Part of Fourmilab's MD5 Digester program 
 
---Version Notes--
+## Contributing
 
-Release Notes:
+I don't know how this works yet. When I figure out I'll edit this part and will recommit it into Master later.
 
-( version 0.1 - 1.2 are lost because I moved to a new computer and at that time I was a kid that didn't know about dropbox and I didn't have a usb too. Sorry. )
+## Versioning
 
-Program ver. Database ver. SafeBrowser Database ver. MD5 Database Count Info
+This project uses semi [SemVer](http://semver.org/) for versioning. For the versions available, see [our website](https://riskremove.blogspot.com). 
 
-0.1          0.1.2013              -                        -            First Ver...
+## Authors
 
-0.2          0.2.2013              -                        -            Added ZeroAccess and Bug Fixes...
+* **Korn (Nickname)** - *Initial and Development work*
+* **Lucky (Nickname)** - *Testing*
 
-0.3          0.2.2013              -                        -            Bug Fixes
+## License
 
-0.4          0.2.2013              -                        -            Bug Fixes and added :404 Moldule (Stable enough version)
+This project is licensed under the GNU GPL v.3 License - see the [LICENSE.md](LICENSE.md) file for details
 
-1.0          0.2.2013              -                        -            Added Many Moldule...Fixed Bug .etc
+## Acknowledgments
 
-1.1          0.2.2013              -                        -            Bug and Name Error Fix
+* ZombieCity (c) Angelis for inspiration about some codes
 
-1.2          0.2.2013              -                        -            Fixes Moldule Lanch Bug
+* Batch Programming Tutorials ( Search in Youtube )
 
-1.2B         0.3.2013              -                        -            Developers Release
+* Farmer.bat ( Search in Youtube ) for inspiration about some codes
 
-1.3          1.0.2014              -                        -            HUGE IMPROVEMENT (Its so many so i cant tell it here...)
+* http://stackoverflow.com/questions/1894967/how-to-request-administrator-access-inside-a-batch-file for admin UAC codes
 
-1.3.1        1.0.2014              -                        -            Added infomation to the error log,add computer's time to the main menu and fixed some file exist checker bug
+* [TheBatchies](http://www.instructables.com/answers/how-can-a-batch-file-be-run-fullscreen/) for fullscreen 
 
-1.3.1        1.1.2014              -                        -            Added 2 malware to the database.
+* [SachaDee](http://stackoverflow.com/questions/40192417/how-to-make-a-md5-batch-virus-scanner) for md5 scanning codes
 
-1.3.2        1.1.2014              -                        -            Added time to the menu
+* [John Walker's Formilab MD5 Command Line Message Digest Utility](http://www.fourmilab.ch/md5/) for md5 digester
 
-1.3.3        1.1.2014              -                        -            Change name to make it able to run within cmd environment and added some REMs in the top of code.
-
-2.0.0        1.1.2014              -                        -            Added updrade module
-
-2.1.0        1.1.2014           0.1.2015                    -            Added SafeBrowser Moldule and remove updrade module cause of some error.
-
-2.1.1        1.0.2015           0.1.2015                    -            Added Change Time Moldule, Database update ( add baidu products and fake av ), copyright disclaimer, fixed some bug, add advanted logging system and changes some word in full scan slide.
-
-2.2.0        1.0.2015           0.1.2015                  786432         Added MD5 scanning moldule, UAC request and Fullscreen support.     
-
+* https://virusshare.com/hashes.4n6 for md5 virus database
