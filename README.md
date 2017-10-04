@@ -46,7 +46,7 @@ This project uses semi [SemVer](http://semver.org/) for versioning. For the vers
 
 ## License
 
-This project is licensed under the GNU GPL v.3 License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU GPL v.3 License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
