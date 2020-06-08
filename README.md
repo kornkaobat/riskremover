@@ -4,6 +4,7 @@ A batch antivirus with MD5 scanning engine and (**discontinued**) filename scan.
 
 ## Getting Started
 
+0. Watch this [Complete Code explanation & Program Demonstration](https://youtu.be/lP_tto5J7Y4)
 1. Go to the [Main Website](https://riskremove.blogspot.com) and click on the "Download" tab
 2. Select the preferred version to download ( newest **recommended** )
 3. Decompress (Unzip/Unrar) the downloaded file with winzip or winrar or 7-zip depending on your choice (Winrar **preferred**)
