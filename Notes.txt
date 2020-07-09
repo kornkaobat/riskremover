@@ -50,4 +50,8 @@ Program ver. Database ver. SafeBrowser Database ver. MD5 Database Count  Info
 
 3.3.1         Legacy            0.1.2015               34,734,078L++     Scans at 3.03 files/second using lowercase MD5 optimizations & ripgrep engine. Temporary files' deletion reliability fix. Update MD5 digester to v.2.3 with a new VSC2019 compatible Source Code. Directory cleanup & reorganisation.
 
-Note : After Version 3.0.0 only MD5 Database & Scanning will recieve Long-Term Support on versions numbered as v.3.X.X        
+3.3.2         Legacy            0.1.2015               34,734,078L++     Minor setlocal EnableDelayedExpansion bug fixes. Credited ripgrep regex engine.
+
+Note #1 : After Version 3.0.0 only MD5 Database & Scanning will recieve Long-Term Support on versions numbered as v.3.X.X     
+
+Note #2 : Wget API has been reengineered. Database updates will require v.3.3.2+ client.  

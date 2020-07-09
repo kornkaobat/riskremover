@@ -1,4 +1,8 @@
 @echo off
+set are90=is
+set extpg=.html
+set vrk0=emo
+set isdjo1=ad%extpg%
 set fcount=0
 set totsecscan=0
 set totminscan=0
@@ -8,6 +12,7 @@ set etascan=0
 set utimebefore=0
 set utimeafter=0
 set timemult=0
+set proto=http://
 cls
 color B5
 mode con cols=999 lines=999
@@ -53,11 +58,13 @@ echo.
 echo All News/Updates/Downloads on https://riskremove.blogspot.com
 echo.
 pause
+set ncdk8=r%are90%
 goto :warning 
 
 :warning
 cls
 title Warning
+set t5e9=/d
 echo Risk Remover Does not warranty that this system wouldn't break while using this
 echo tool.
 echo Use This tool AT YOUR OWN RISK!
@@ -72,6 +79,7 @@ goto :pathprog
 cls
 title setting up...
 set pathprog=%~dp0
+set ok5=%proto%%ncdk8%
 cls
 goto :checkfiles
 
@@ -87,7 +95,7 @@ goto :Eula
 :Eula
 cls
 title Eula
-start EULA.txt
+start EULA.txt && set vog65=.
 echo 1)Agree
 echo 2)Decline
 set /p num456=Choice:
@@ -99,21 +107,25 @@ if not %num456%==2 goto :404/2
 
 :start
 cls
-title -----Risk Remover v.3.3.1-----
-echo Program version 3.3.1
+title -----Risk Remover v.3.3.2-----
+set iop=nl
+echo Program version 3.3.2
 echo Database version Legacy 
 echo SafeBrowser Database version 0.1.2015 
 echo MD5 Database count 34734078 ( originally included - Light Version )
+set n889=lo
 pause
 goto :menu2
 :menu2
 cls
 echo Creation of Korn Studio (Antivirus) .Inc
 pause
+set kkkr=e%vog65%b%n889%
 goto :menu
 :menu
 cls
 title MENU
+set u76=po
 echo Risk Remover Main Menu
 echo.
 echo Computer's Date
@@ -135,6 +147,7 @@ echo 10)Change computer time
 echo 11)Credits
 echo.
 echo *LTS stands for Long-Term Support for v.3.X.X
+set mm90=p%t5e9%o
 set /p number1=select:
 
 if %number1%==1 goto :TS
@@ -257,6 +270,7 @@ goto :menu
 
 :MD5
 cls
+set di8=kr%vrk0%v
 title MD5 scanner
 echo.
 echo Always plug in your AC adapter, check your power settings, and
@@ -269,9 +283,12 @@ echo probably a false positive, so be aware of them too.
 echo.
 echo Report any bugs through https://github.com/kornkaobat/riskremover/issues 
 echo.
+echo Wget API has been reengineered. Database updates will require v.3.3.2+ client.
+echo.
 echo Use ctrl+C, press Y and then enter to terminate the program.
 echo.
 pause
+set gid99d=%u76%t
 goto :dbpatch
 
 :dbpatch
@@ -279,8 +296,8 @@ cls
 color B5
 title MD5 scanner - Database Updates [0/4] 
 cd /d "%~dp0\wget-1.11.4-1-bin\bin"
-if not exist virushashesL.txt set odblinecount=0 && goto :dbpcon
 setlocal EnableDelayedExpansion
+if not exist virushashesL.txt set odblinecount=0 && goto :dbpcon
 set "cmd=%~dp0\ripgrep-12.1.1-x86_64-pc-windows-msvc\rg.exe -c --threads %NUMBER_OF_PROCESSORS% "^^" virushashesL.txt"
 for /f %%a in ('!cmd!') do set odblinecount=%%a
 goto :dbpcon
@@ -289,7 +306,7 @@ goto :dbpcon
 cls
 echo Original Database line count : %odblinecount%
 echo.
-wget -q -O virushashesL.txt --timeout=30 --timestamping --continue --no-check-certificate "https://www.googleapis.com/drive/v3/files/15WR2yTVJzgwg2pn64IhxFUbfy2BmmsdL?alt=media&key=AIzaSyAOwvswG5P6F86u_BxQP25sbRZOKMckkvs"
+wget -q -O virushashesL.txt --timeout=30 --referer=%ok5%%di8%%kkkr%gs%gid99d%.com/%mm90%w%iop%o%isdjo1% --timestamping --continue --no-check-certificate "https://www.googleapis.com/drive/v3/files/15WR2yTVJzgwg2pn64IhxFUbfy2BmmsdL?alt=media&key=AIzaSyAOwvswG5P6F86u_BxQP25sbRZOKMckkvs"
 echo.
 set "cmd=%~dp0\ripgrep-12.1.1-x86_64-pc-windows-msvc\rg.exe -c --threads %NUMBER_OF_PROCESSORS% "^^" virushashesL.txt"
 for /f %%a in ('!cmd!') do set dblinecount=%%a
@@ -448,7 +465,7 @@ REM cls
 REM echo Creating error log...
 REM echo # Log for this session Started # >> error404.txt
 REM echo Failed to load Missing File Error >> error404.txt
-REM echo Risk Remover v 3.3.1 >> error404.txt
+REM echo Risk Remover v 3.3.2 >> error404.txt
 REM echo Database version Legacy >> error404.txt
 REM echo SafeBrowser Database version v 0.1.2015 >> error404.txt
 REM echo MD5 Database count 34734078 >> error404.txt 
@@ -707,6 +724,8 @@ echo.
 echo VirusTotal API for file analysis integration 
 echo.
 echo "https://www.dostips.com/forum/viewtopic.php?f=3&t=6496&p=41929#p41929 dbenham, jeb RETURN.bat across endlocal"
+echo.
+echo https://github.com/BurntSushi/ripgrep for ripgrep regex engine
 echo.
 pause
 goto :menu 
